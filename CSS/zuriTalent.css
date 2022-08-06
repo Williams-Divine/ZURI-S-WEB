@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.color-red{
+    color: #e7332b;
+}
+/* header */
+header{
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+header nav{
+    width: 45%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7332b;
+}
+header nav ul li a{
+}
+#home{
+    margin-top: 15%;
+    display: flex;
+}
+#home img {
+    width: 45%;
+}
+#home h1 span{display: flex;
+    flex-direction: column;
+}

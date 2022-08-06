@@ -1,0 +1,56 @@
+*{
+    margin: 0%;
+    padding:0%
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5%,95vh,45vh,2fr,1fr,1fr,1fr,.5fr,10%;
+    grid-template-areas:    'header'
+                            'sec1'
+                            'sec2'
+                            'sec3'
+                            'sec4'
+                            'sec5'
+                            'sec6'
+                            'sec7'
+                            'sec8'
+                            'footer';
+}
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction:row ;
+    padding: 55%;
+}
+
+#section1{
+    grid-area:sec1 ;
+}
+
+#about{
+    grid-area: sec2;
+}
+
+#whyUs{
+    grid-area: sec3;
+}
+
+#section4{
+    grid-area: sec4;
+}
+
+#stacks-covered{
+    grid-area: sec5;
+}
+
+#faq{
+    grid-area: sec6;
+}
+#structure{
+    grid-area: sec6;
+}
+
+footer{
+    grid-area: footer;
+}
