@@ -1,10 +1,12 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
-.red-color{
-    color: #e7332b;
+:root{
+    --primary:#e7332b;
 }
+
 a{
     text-decoration: none;
 }
@@ -13,7 +15,7 @@ body{
     flex-direction: column;
 }
 header{
-    padding: 15%;
+    padding: 12%;
     margin: auto;
 }
 main{
@@ -41,26 +43,24 @@ main{
     padding: 2% 5%;
 }
 #btn1{
-    background-color: #e7332b;
+    background-color: var(--primary);
     border: none;
     margin-right: 2%;
-}
-#btn1 a{
     color: white;
 }
-#btn1:hover,#btn1 a:hover{
-    background-color: none;
-    color: #e7332b;
+#btn1:hover{
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
 }
 #btn2{
     background: none;
-    border: 1px solid #e7332b;
+    border: 1px solid var(--primary);
+    color:var(--primary);
+
 }
-#btn2 a{
-    color:#e7332b;
-}
-#btn2:hover,#btn2 a:hover{
-    background-color: #e7332b;
+#btn2:hover{
+    background-color: var(--primary);
     color:white;
 }
 /* Section2 */
@@ -96,4 +96,27 @@ footer ul li{
 
  footer #copyright{
     margin: auto;
+}
+/*media query for mobile- 1000px*/
+@media screen and (max-width:850px){
+    #section1 div{
+        display: flex;
+        flex-direction: column;
+    }
+    #section1 div a{
+        padding: 1rem;
+    }
+    #btn1{
+         margin:1rem ;
+        }
+    footer #main-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+    }
+    #shorten{
+        text-align: center;
+        width: 50%;
+    }
 }

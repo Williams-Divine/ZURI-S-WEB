@@ -2,6 +2,9 @@
     margin: 0%;
     padding: 0%;
 }
+:root{
+    --primary:#e7332b;
+}
 li{
     list-style: none;
 }
